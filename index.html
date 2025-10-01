@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>초등학생 테트리스 🕹️</h1>
     <div class="game-container">
+        <h1>초등학생 테트리스 🕹️</h1>
         <canvas id="game-board" width="200" height="400"></canvas>
         <div class="info-panel">
             <div class="info-box">
@@ -20,9 +20,10 @@
                 <canvas id="next-block" width="80" height="80"></canvas>
             </div>
             <button id="start-button">게임 시작</button>
-            <div id="game-over" style="display: none;">
+            <div id="game-over" class="hidden">
                 <h2>게임 오버!</h2>
                 <p>다음에 더 잘할 수 있어요!</p>
+                <button onclick="window.location.reload()">다시 시작</button>
             </div>
         </div>
     </div>
